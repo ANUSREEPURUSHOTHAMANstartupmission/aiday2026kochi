@@ -1,4 +1,4 @@
-<script is:inline>
+<script>
 	import {onMount} from 'svelte';
 
 	export let date;
@@ -9,8 +9,11 @@
 	let dayText = 0, hourText = 0, minText = 0, secText = 0;
 
 	onMount(() => {
-		interval = setInterval(moveTimer, 1000)
-	})
+	moveTimer();
+	interval = setInterval(moveTimer, 1000);
+
+	return () => clearInterval(interval);
+});
 
 	function moveTimer(){
 		const now = new Date().getTime();
