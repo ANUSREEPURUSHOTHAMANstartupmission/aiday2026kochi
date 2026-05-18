@@ -37,7 +37,7 @@ import { categories } from "../components/categories.js";
                 <div class="col-12 md:pb-10">
                     <div class="te-section-title justify-content-center text-center">
                         <div class="te-section-content">
-                            <h1 class="title"><span>AI Day</span> for Startups India 2026 - Kochi</h1>
+                            <h1 class="title"><span>AI Day</span> for Startups 2026 <br><span class="text-white md:text-5xl text-3xl pt-2">Kochi</span></h1>
                         </div>
                     </div>
                 </div>
@@ -88,14 +88,25 @@ import { categories } from "../components/categories.js";
 
 
     <section class="w-full py-6 px-4">
-        <div class="max-w-7xl mx-auto border border-white/20 rounded-3xl overflow-hidden bg-gradient-to-r from-[#1ef40b7d] via-[#104a2a] to-[#315c2d] relative">
+        <div class="container mx-auto border border-white/20 rounded-3xl overflow-hidden bg-gradient-to-r from-[#1ef40b7d] via-[#104a2a] to-[#315c2d] relative">
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.25),transparent_40%)]"></div>
-            <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-2 px-8 py-10">
+            <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 items-center md:gap-2 gap-4 md:px-8 px-4 py-10">
             
                 <div>
-                    <h2 class="text-white md:text-xl text-lg font-extrabold tracking-wide">
-                    22nd May 2026, 9:00 AM - 5:00 PM
-                    </h2>
+                    <div class="text-white  text-base font-extrabold tracking-wide flex md:flex-row flex-col gap-2">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                            </svg>
+                            22nd May 2026
+                        </div>
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            9:00 AM - 5:00 PM
+                            </div>
+                        </div>
                 </div>
                 <div class="flex justify-center">
                     <Countdown date="May 22, 2026 09:00:00" client:load/>             
@@ -116,7 +127,7 @@ import { categories } from "../components/categories.js";
                     </div>
 
                     <div>
-                    <p class="text-white md:text-xl text-lg font-bold leading-snug">
+                    <p class="text-white md:text-base text-sm font-bold leading-snug">
                        Kerala Startup Mission Digital Hub, Kochi
                     </p>
                     </div>

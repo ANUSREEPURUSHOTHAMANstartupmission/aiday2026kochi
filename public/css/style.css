@@ -3277,9 +3277,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   .banner-area.style-2 {
     overflow: hidden; }
     .banner-area.style-2 .te-section-title .title {
-      font-size: 90px;
+      font-size: 80px;
       font-weight: 700;
-      line-height: initial;
+      /* line-height: initial; */
       letter-spacing: -2.52px; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .banner-area.style-2 .te-section-title .title {

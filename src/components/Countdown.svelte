@@ -60,7 +60,7 @@
 		<div class="glow"></div>
 
 		<h2 class="lg:text-3xl text-xl">{days}</h2>
-		<p class=" text-sm">Days</p>
+		<p class=" md:text-sm text-xs">Days</p>
 	</div>
 
 	
@@ -70,7 +70,7 @@
 		<div class="glow"></div>
 
 		<h2 class="lg:text-3xl text-xl">{hours}</h2>
-		<p class=" text-sm">Hours</p>
+		<p class=" md:text-sm text-xs">Hours</p>
 	</div>
 
 	
@@ -79,7 +79,7 @@
 		<div class="glow"></div>
 
 		<h2 class="lg:text-3xl text-xl">{minutes}</h2>
-		<p class=" text-sm">Minutes</p>
+		<p class=" md:text-sm text-xs">Minutes</p>
 	</div>
 
 	
@@ -89,7 +89,7 @@
 		<div class="glow"></div>
 
 		<h2 class="lg:text-3xl text-xl">{seconds}</h2>
-		<p class=" text-sm">Seconds</p>
+		<p class=" md:text-sm text-xs">Seconds</p>
 	</div>
 
 </div>
