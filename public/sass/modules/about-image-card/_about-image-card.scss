@@ -1,0 +1,61 @@
+.te-about-image-card {
+  .te-main-img-wrapper {
+  
+    .te-main-img-inner {
+      position: relative;
+      display: inline-block;
+      z-index: 2;
+      > img {
+        border-radius: 5px;
+
+        @include rmaxwd(650) {
+          width: 100%;
+        }
+      }
+      .image-two {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        border-radius: 10px;
+        transform: translateX(-50%);
+        margin-top: -235px;
+        width: 300px;
+        height: 327px;
+
+        @include sm {
+          width: 100%;
+          height: 300px;
+          transform: unset;
+          margin-top: 29px;
+        }
+
+        @include md {
+          transform: translateX(100%);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          aspect-ratio: 1/1;
+        }
+    }
+      .te-img-card-shape {
+        position: absolute;
+        top: 50%;
+        left: -100px;
+        z-index: -1;
+        transform: translateY(-50%);   
+
+        @include rmaxwd(991) {
+          left: unset;
+          right: 0;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,318 @@
+.portfolio-column-in-three {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+  // [data-item="1"] {
+
+  // }
+
+  .portfolio-item {
+    height: 388px;
+    position: relative;
+
+    &:hover {
+      .portfolio-img {
+        img {
+          transform: scale(1.1);
+          @include transition;
+        }
+      }
+      .content-wrapper {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        @include transition;
+      }
+    }
+    
+    @include md {
+      height: 235px;
+    }
+
+    @include lg {
+      height: 285px;
+    }
+
+    &:nth-child(5n + 1) {
+      grid-row: span 2;
+      height: 804px !important;
+  
+      @include sm {
+        height: 388px !important;
+      }
+  
+      @include md {
+        height: 500px !important;
+      }
+  
+      @include lg {
+        height: 600px !important;
+      }
+    } 
+    &:first-child {
+      grid-row: span 2;
+      height: 804px !important;
+  
+      @include sm {
+        height: 388px !important;
+      }
+  
+      @include md {
+        height: 500px !important;
+      }
+  
+      @include lg {
+        height: 600px !important;
+      }
+    }
+    
+    .content-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transform: scale(0.75);
+      opacity: 0;
+      visibility: hidden;
+      @include transition;
+
+      @include md {
+        padding: 30px;
+      }
+
+      @include sm {
+        padding: 20px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #121212d6;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+
+        .title {
+          font-family: $heading-font;
+          margin-bottom: 0;
+          font-size: 37px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40.95px;
+          letter-spacing: -1.17px;
+
+          @include md {
+            font-size: 24px;
+            line-height: 28px;
+          }
+          
+          @include md {
+            font-size: 28px;
+            line-height: 32px;
+          }
+
+          @include lg {
+            font-size: 32px;
+            line-height: 42px;
+          }
+        }
+      }
+    }
+  }
+  .portfolio-img {
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      transform: scale(1);
+      @include transition;
+    }
+  }
+}
+
+// .portfolio-gallery-wrapper {
+//   display: flex;
+  
+//   .single-column-portfolio {
+//     width: 50%;
+//     flex-shrink: 0;
+//   }
+// }
+
+// .te-portfolio-filter {
+//   padding: 0;
+//   display: flex;
+//   gap: 20px 30px;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 50px;
+//   flex-wrap: wrap;
+  
+//   li {
+//     list-style: none;
+//     font-size: 17px;
+//     font-weight: 600;
+//     line-height: initial;
+//     letter-spacing: 0.6px;
+//     text-transform: capitalize;
+//     display: inline-block;
+//     cursor: pointer;
+//     border-radius: 5px;
+//     color: $gray-800;
+//     border: 1px solid $gray-200;
+//     padding: 10px 22px;
+//     @include transition;
+
+//     &.active {
+//       background-color: $blue-color;
+//       border-color: $blue-color;
+//       color: $white;
+//       @include transition;
+//     }
+//     &:hover {
+//       background-color: $blue-color;
+//       border-color: $blue-color;
+//       color: $white;
+//       @include transition;
+//     }
+
+
+//   }
+// }
+
+// .te-portfolio-card {
+//   background-color: $white;
+//   overflow: hidden;
+//   margin-bottom: 30px;
+
+//   &:hover {
+//     .image {
+//       .te-content-wrapper {
+//         visibility: visible;
+//         opacity: 1;
+//         @include transition;
+//         transform: scale(1);
+        
+//         .content {
+//             .content-inner {
+//               margin-bottom: 0;
+//               @include transition;
+//             }
+//           .btn-wrapper {
+//             @include transition;
+//           }
+//           .content-inner {
+//             @include transition;
+//             transform: scaleY(1);
+//           }
+//         }
+//       }
+//       img {
+//         transform: scale(1.1);
+//         @include transition;
+//       }
+//     }
+//   }
+//   .image {
+//     overflow: hidden;
+//     position: relative;
+
+//     img {
+//        transform: scale(1);
+//       @include transition;
+//       width: 100%;
+//     }
+//   }
+//   .te-content-wrapper {
+//     padding: 12px;
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     left: 0;
+//     top: 0;
+//     visibility: hidden;
+//     opacity: 0;
+//     @include transition;
+//     // transform: scale(1.5);
+
+//     .content {
+//       display: flex;
+//       flex-direction: row;
+//       height: 100%;
+//       gap: 10px;
+//       align-items: flex-end;
+//       justify-content: space-between;
+//       position: relative;
+
+//       .content-inner {
+//         width: 100%;
+//         background-color: $blue-color;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         border-radius: 5px;
+//         padding: 18px 10px;
+//         // margin-bottom: -100%;
+//         @include transition;
+//         transform: scaleY(0.3);
+//       }
+//       .sub-title {
+//         color: $white;
+//         font-size: 18px;
+//         line-height: 36px;
+//         font-weight: 400;
+//       }
+//       .title {
+//         margin-bottom: 0;
+//         color: $white;
+//         font-size: 24px;
+//         line-height: 39px;
+//         font-weight: 500;
+//       }
+
+//       .btn-wrapper {
+//         position: absolute;
+//         top: 0;
+//         flex-shrink: 0;
+//         padding: 0;
+//         @include transition;
+//         a {
+//           display: inline-flex;
+//           width: 73px;
+//           height: 73px;
+//           background-color: $orange-color;
+//           border-radius: 50px;
+//           color: $black;
+//           align-items: center;
+//           justify-content: center;
+//           @include transition;
+//           font-size: 24px;
+
+//           &:hover {
+//             @include transition;
+//             background-color: $primary-color;
+//             color: $white;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

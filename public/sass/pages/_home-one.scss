@@ -1,0 +1,350 @@
+// About Us Area
+.about-feature-area {
+  border-radius: 20px;
+  border: 1px solid $border-color;
+  background: linear-gradient(110deg, rgba(40, 40, 40, 0.29) -0.9%, rgba(77, 77, 77, 0.21) 101.13%);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(6.5px);
+  margin: 0 40px;
+  padding: 120px 0;
+  overflow: hidden;
+  
+  @include xs {
+    padding: 30px 0 !important;
+  }
+  @include sm {
+    padding: 80px 0;
+    margin: 0 15px;
+  }
+
+  @include md {
+    padding: 100px 0;
+    margin: 0 30px;
+  }
+  .circle-drop-shadow {
+    right: -100px;
+    top: -100px;
+  }
+}
+
+
+// Faq Area
+.faq-area {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  
+  &.style-1 {
+    border-radius: 20px;
+    border: 1px solid $border-color;
+    background: linear-gradient(110deg, rgba(40, 40, 40, 0.29) -0.9%, rgba(77, 77, 77, 0.21) 101.13%);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(6.5px);
+    margin: 0 40px;
+    padding: 120px 0;
+
+    @include xs {
+      padding: 60px 0 !important;
+    }
+    @include sm {
+      margin: 0 15px;
+      padding: 80px 0;
+    }
+
+    @include md {
+      padding: 100px 0;
+    }
+    .circle-drop-shadow {
+      top: -40%;
+      right: -30%;
+      z-index: -1;
+    }
+  }
+  .image-card {
+    margin-left: 100px;
+    
+    @include rmaxwd(1199) {
+      margin-left: 0;
+    }
+  }
+}
+
+// Latest Service Area
+.latest-service-area {
+  &.style-1 {
+    padding: 150px 0;
+
+    @include sm {
+      padding-top: 0;
+      padding-bottom: 80px;
+    }
+    @include md {
+      padding-top: 0;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+
+// Feature Area
+.feature-area {
+  position: relative;
+  overflow: hidden;
+
+  &.style-1 {
+    padding-top: 150px;
+    padding-bottom: 20px;
+
+    @include sm {
+      padding-top: 80px;
+    }
+    @include md {
+      padding-top: 100px;
+    }
+  }
+  .circle-drop-shadow {
+    left: -50px;
+    top: 100px;
+  }
+}
+
+// Process Step Area
+.process-step-area {
+  padding: 150px 0;
+
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 100px 0;
+  }
+  @include lg {
+    padding: 120px 0;
+  }
+}
+
+
+// Pricing Area
+.price-area {
+  padding: 150px 0;
+  overflow: hidden;
+
+  .circle-drop-shadow {
+    right: 0;
+  }
+
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 100px 0;
+  }
+  @include lg {
+    padding: 120px 0;
+  }
+
+}
+
+// Latest Post Area
+.latest-posts-area {
+  &.style-1 {
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+  
+    @include sm {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    @include lg {
+      padding: 120px 0;
+    }
+
+    .circle-drop-shadow {
+      right: -50px;
+      bottom: -30%;
+    }
+  }
+}
+
+// Subscribe Area
+.subscribe-area {
+  padding: 80px 0;
+  border-radius: 20px;
+  border: 2px solid $border-color;
+  background: linear-gradient(110deg, rgba(40, 40, 40, 0.29) -0.9%, rgba(77, 77, 77, 0.21) 101.13%);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(6.5px);
+  margin: 0 40px;
+  overflow: hidden;
+
+  @include xs {
+    padding: 60px 0 !important;
+  }
+  @include sm {
+    margin: 0 15px;
+  }
+
+  
+  .circle-drop-shadow {
+    top: -50%;
+    left: -300px;
+
+    &.two {
+      bottom: -50%;
+      right: -300px;
+      background: #84C102;
+     filter: blur(244.71058654785156px);
+     top: unset;
+     left: unset;
+    }
+  }
+  .te-section-title {
+    margin-bottom: 40px;
+  }
+  .te-subscribe-form-widget {
+    .single-field input {
+      border-radius: 50px;
+      background-color: transparent;
+      border: solid 2px transparent;
+      background-image: linear-gradient($gray-700, $gray-700), 
+                        linear-gradient(to right, rgba(2, 193, 115, 0.40), transparent);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+    }
+    .submit-btn {
+      border-radius: 50px;
+    }
+  }
+}
+
+// Work Progress
+.work-prgress-area {
+  padding: 150px 0;
+  position: relative;
+  overflow: hidden;
+
+  .circle-drop-shadow {
+    right: -200px;
+  }
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 100px 0;
+  }
+  @include lg {
+    padding: 120px 0;
+  }
+}
+
+
+// Brand Marquee Area
+.te-marquee-area {
+  padding-top: 120px;
+  overflow: hidden;
+
+  @include sm {
+    padding-top: 80px;
+  }
+
+  @include md {
+    padding-top: 100px;
+  }
+    // display: flex;
+    // flex-direction: column;
+    // overflow: hidden;
+    // gap: 66px;
+    // background-color: $primary-color;
+    // @include rmaxwd(767) {
+    //   gap: 20px;
+    // }
+
+
+    .te-marquee-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 44px;
+  
+      &.first-te-marquee{
+        animation: Scroll 32s linear infinite;
+
+        .single-te-marquee {
+          &:nth-child(even) {
+            .te-marquee-title {
+              color: $white;
+              -webkit-text-fill-color: transparent;
+              -webkit-text-stroke-width: 1px;
+            }
+          }
+        }
+      }
+      &.second-te-marquee{
+        animation: Scroll 32s linear infinite;
+        animation-direction: reverse;
+
+        .single-te-marquee {
+          .te-marquee-title {
+            span {
+              color: $white;
+              -webkit-text-fill-color: transparent;
+              -webkit-text-stroke-width: 1px;
+            }
+          }
+        }
+      }
+    }
+    .single-te-marquee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 44px;
+
+      &:last-child {
+        .te-marquee-star {
+          display: none;
+        }
+      }
+      .te-marquee-title {
+        font-size: 49px;
+        font-weight: 700;
+        line-height: 55.65px;
+        letter-spacing: -1.59px;
+        white-space: nowrap;
+        font-family: $heading-font;
+        color: $white;
+        // @include sm {
+        //   font-size: 62px;
+        //   line-height: 62px;
+        // }
+        // @include md {
+        //   font-size: 80px;
+        //   line-height: 80px;
+        // }
+        // @include lg {
+        //   font-size: 95px;
+        //   line-height: 75px;
+        // }
+        // @include xl {
+        //   font-size: 100px;
+        //   line-height: 80px;
+        // }
+      }
+      .te-marquee-icon {
+        font-size: 49px;
+        font-weight: 700;
+        color: $white;
+        white-space: nowrap;
+        line-height: 0;
+        width: 64px;
+      }
+    }
+  }
+
+  // Testimonial Slider 
+  .testimonial-slider-area {
+    overflow: hidden;
+  }

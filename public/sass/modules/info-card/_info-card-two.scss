@@ -1,0 +1,117 @@
+.feature-card {
+
+    .te-info-card {
+        &.style-2 {
+            background-color: rgba(18, 18, 18, 0.50);
+            border-radius: 20px;
+            padding: 45px 60px 45px 60px;
+            height: 100%;
+
+            @include rmaxwd(991) {
+                padding: 30px;   
+            }
+            .te-content-wrapper {
+                padding: 0;
+            }
+        }
+
+        .te-info-card-inner {
+            flex-direction: row;
+            align-items: center;
+            gap: 61px;
+            
+            @include rmaxwd(991) {
+                gap: 30px;
+                flex-direction: column;
+                
+            }
+            @include lg {
+                gap: 40px;
+            }
+            .image { 
+                width: 50%;
+                flex-shrink: 0;
+            }
+        }
+        .te-content-wrapper {
+            text-align: left;
+            align-items: flex-start;
+
+            @include rmaxwd(991) {
+                text-align: center;
+                align-items: center;             
+            }
+        
+        }
+    }
+}
+.te-info-card {
+
+    
+    &.style-2 {
+        background-color: $gray-900;
+        padding: 40px 0 0 0;
+        position: relative;
+        text-align: center;
+        border-radius: 20px;
+        height: 100%;
+
+        @include rmaxwd(991) {
+            padding: 30px;
+        }
+        @include lg {
+            padding: 25px;
+        }
+
+
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.03);
+                    @include transition;
+                }
+            }
+            .content { 
+                .te-read-more {
+                    .te-theme-btn {
+                        background-color: inherit;
+                        color: $blue-color;
+                    }
+                }
+            }
+        }
+        .image {
+            border-radius: 5px;
+            overflow: hidden;
+
+            img {
+                transform: scale(1);
+                @include transition;
+            }
+        }
+        .te-title-wrapper {
+            padding-bottom: 15px;
+        }
+        .te-content-wrapper {
+            padding: 0 70px 40px 70px;
+
+            @include rmaxwd(1199) {
+                padding: 0;
+            }
+            @include xl {
+                padding: 0 40px 40px 40px;
+            }
+        }
+        .content {
+            gap: 10px;
+            margin-bottom: 0;
+            
+            .te-read-more {
+                .te-theme-btn {
+                    padding: 0;
+                    border: 0;
+                }
+            }
+        }
+    }
+}

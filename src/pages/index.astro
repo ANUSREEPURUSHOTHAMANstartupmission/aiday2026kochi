@@ -1,0 +1,575 @@
+
+
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+import Whyget from "../components/Whyget.astro";
+
+
+import { categories } from "../components/categories.js";
+
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+<!-- Preloader Start !-->
+<div id="preloader">
+    <div id="preloader-status">
+        <div class="preloader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div class="te-body-overlay"></div>
+
+    <!-- Banner Area Start !-->
+    <div class="banner-area style-2">
+        <div class="circle-drop-shadow"></div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12">
+                    <div class="te-section-title justify-content-center text-center">
+                        <div class="te-section-content">
+                            <h1 class="title"><span>AI Day</span> for Startups India 2026 - Kochi</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="banner-info-card style-2">
+                        <div class="content-wrapper">
+                            <h3 class="title hidden"><span>Startup</span><br/> Technology</h3>
+                            <div class="content">
+                                <p>Kerala Startup Mission in association with Google for Developers is hosting AI Day for Startups India 2026 - Kochi, a full-day event designed to help startups, developers, founders, and innovators explore the latest advancements in Artificial Intelligence and learn how to integrate AI into real-world products and applications.</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="tilt-animate" src="/img/1.png" alt="image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="banner-image">
+                        <img class="tilt-animate" src="/img/2.png" alt="image" />
+                    </div>
+                </div> 
+                <div class="col-lg-4">
+                    <div class="banner-info-card style-3">
+                        <div class="image">
+                            <img class="tilt-animate" src="/img/3.png" alt="image" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="content">
+                                <p>AI Day for Startups is part of a multi-city initiative by Google for Developers aimed at empowering India’s startup ecosystem with practical knowledge, hands-on experience, and access to cutting-edge AI technologies.</p>
+                                <div class="btn-wrapper">
+                                    <a href="https://rsvp.withgoogle.com/events/ai-day-for-startups/" target="_blank">Register Now<i class="fa fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="counter-card hidden">
+                        <div class="te-counter-wrapper">
+                            <span class="counter">10</span><span>K+</span>
+                        </div>
+                        <h6 class="title">Satisficed <br/> Clients</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Area End !-->
+
+
+    <section class="w-full ] py-6 px-4">
+        <div class="max-w-7xl mx-auto border border-white/20 rounded-3xl overflow-hidden bg-gradient-to-r from-[#1ef40b7d] via-[#104a2a] to-[#315c2d] relative">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.25),transparent_40%)]"></div>
+            <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-4 px-8 py-10">
+            
+                <div>
+                    <h2 class="text-white text-xl font-extrabold tracking-wide">
+                    22nd May 2026, 9:00 AM - 5:00 PM
+                    </h2>
+                </div>
+                <div class="flex justify-center gap-10 ">
+                    <Countdown date="2027-05-22T09:00" client:load></Countdown>
+                </div>
+                <div class="flex items-center gap-5 justify-center md:justify-end">
+
+                    <div class="w-6 h-6 rounded-full bg-[#ffffff] flex items-center justify-center shrink-0">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4 text-black"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"
+                        />
+                    </svg>
+                    </div>
+
+                    <div>
+                    <p class="text-white text-xl font-bold leading-snug">
+                       Kerala Startup Mission Digital Hub, Kochi
+                    </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-us-area style-1 pt-24">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="te-about-image-card">
+                        <div class="te-main-img-wrapper">
+                            <div class="te-main-img-inner">
+                                <img class="tilt-animate" src="/img/4.jpg" alt="image" />
+
+
+                                <div class="te-img-card-shape">
+                                    <img class="tilt-animate" src="images/about/about-shape.png" alt="Shape" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="te-about-info-card">
+                        <div class="te-about-info-content">
+                            <div class="te-section-title">
+                                <div class="te-section-content">
+                                    <div class="te-section-desc">
+                                        <p>The event will focus on helping startups move from experimentation to execution by exploring areas such as:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="te-list-item-wrapper">
+                                <div class="te-list-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </span>
+                                    <span class="text">Agentic AI workflows</span>
+                                </div>
+                                <div class="te-list-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </span>
+                                    <span class="text">Multimodal AI capabilities</span>
+                                </div>
+                                <div class="te-list-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </span>
+                                    <span class="text">Sovereign AI and localized AI models</span>
+                                </div>
+                                <div class="te-list-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </span>
+                                    <span class="text">Physical AI and Edge Intelligence</span>
+                                </div>
+                                <div class="te-list-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </span>
+                                    <span class="text">AI product development and deployment using Google AI tools</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Latest Service Area Start !-->
+    <div class="latest-service-area style-1 pb-24 pt-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="latest-service-wrapper">
+                        <div class="latest-service-card wow animate__animated animate__fadeInUp animate__faster">
+                            <div class="circle-drop-shadow"></div>
+                            <div class="content-wrapper w-full">
+                                <div class="content text-center">
+                                    <p>Participants will also get an opportunity to build AI-powered applications using Google AI Studio and other Google AI technologies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest Service Area Start !-->
+    
+
+    <!-- Latest Posts Area Start -->
+    <div class="latest-posts-area style-1 pb-24">
+        <div class="circle-drop-shadow"></div>
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="row pb-10">
+                <div class="col-12 wow animate__animated animate__slideInDown animate__slow">
+                    <div class="te-section-title justify-content-center text-center">
+                        <div class="te-section-content">
+                            
+                            <h2 class="title">What to Expect</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section Title End -->
+            <div class="row gy-4">
+                <div class="col-lg-6 wow animate__animated animate__fadeInUp animate__slower">
+                    <div class="latest-post-card style-2">
+                        <div class="circle-drop-shadow"></div>
+                        <div class="image">
+                            <img src="images/latest-post/v-2/l1.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            
+                            <h3 class="title">
+                                <a href="blog-details.html">Get hands-on experience building AI applications using Google AI tools and platforms including</a>
+                            </h3>
+                            <div class="te-section-title justify-content-center text-center pt-2">
+                                <div class="te-section-content flex-wrap flex gap-2">
+                                    <div>
+                                        <span class="short-title">Gemini API</span>
+                                    </div>
+                                     <div>
+                                        <span class="short-title">Gemma</span>
+                                    </div>
+                                     <div>
+                                        <span class="short-title">Nano Banana</span>
+                                    </div>
+                                     <div>
+                                        <span class="short-title">Veo</span>
+                                    </div>
+                                     <div>
+                                        <span class="short-title">Lyria</span>
+                                    </div>
+                                     <div>
+                                        <span class="short-title">Google AI Studio</span>
+                                    </div>
+                                     <div>
+                                        <span class="short-title">Google Cloud
+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="latest-post-card-wrapper">
+                        <div class="latest-post-card style-1 wow animate__animated animate__fadeInLeft animate__fast">
+                            <div class="image">
+                                <img src="images/latest-post/v-2/l2.jpg" alt="image">
+                            </div>
+                            <div class="content my-auto">
+                                <h3 class="title">
+                                    <a href="blog-details.html">Insights on the Future of AI</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="latest-post-card style-1 wow animate__animated animate__fadeInRight animate__slow">
+                            <div class="image">
+                                <img src="images/latest-post/v-2/l3.jpg" alt="image">
+                            </div>
+                            <div class="content my-auto">
+                                <h3 class="title">
+                                    <a href="blog-details.html">Explore the latest AI trends and innovations in 2026 with sessions from Google experts, founders, industry leaders, and investors.</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="latest-post-card style-1 wow animate__animated animate__fadeInRight animate__slower">
+                            <div class="image">
+                                <img src="images/latest-post/v-2/l4.jpg" alt="image">
+                            </div>
+                            <div class="content my-auto">
+                                <h3 class="title">
+                                    <a href="blog-details.html">Build with Google AI</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest Posts Area End -->
+
+
+
+    <section class="relative overflow-hidden  py-20 px-4">
+  
+  <!-- Background Glow -->
+  <div class="absolute inset-0">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-green-600/20 blur-[140px] rounded-full"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/20 blur-[140px] rounded-full"></div>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-14">
+      <span class="inline-block px-5 py-2 rounded-full border border-green-500/40 bg-white/5 text-green-300 text-sm tracking-widest uppercase">
+        Event Schedule
+      </span>
+
+      <h2 class="mt-6 text-4xl md:text-6xl font-black text-white leading-tight">
+        Google AI Summit <span class="text-[#02C173]">2026</span>
+      </h2>
+
+      <p class="mt-5 text-gray-300 text-lg max-w-2xl mx-auto">
+        A full-day immersive experience featuring keynotes, AI discussions,
+        networking, and hands-on innovation sessions with Google AI.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative">
+
+      <!-- Vertical Line -->
+      <div class="absolute left-5 md:left-1/2 top-0 h-full w-[2px] bg-gradient-to-b from-green-500 via-blue-500 to-transparent"></div>
+
+      <div class="space-y-8">
+
+        <!-- Item -->
+        <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+          <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+            <div class="inline-block px-5 py-2 rounded-full bg-green-600 text-white font-semibold shadow-lg shadow-green-500/20">
+              9:00 AM – 10:00 AM
+            </div>
+          </div>
+
+          <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:ml-16 hover:border-green-500/50 transition duration-300">
+            <div class="absolute -left-[42px] md:-left-[74px] top-8 w-5 h-5 rounded-full bg-green-500 border-4 border-[#050816]"></div>
+
+            <h3 class="text-xl font-bold text-white">
+              Registration & Breakfast
+            </h3>
+
+            <p class="mt-3 text-gray-300">
+              Attendee registration, networking, and breakfast session.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+          <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+            <div class="inline-block px-5 py-2 rounded-full bg-[#2828284a] text-white font-semibold">
+              10:00 AM – 10:05 AM
+            </div>
+          </div>
+
+          <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:ml-16 hover:border-blue-500/50 transition duration-300">
+            <div class="absolute -left-[42px] md:-left-[74px] top-8 w-5 h-5 rounded-full bg-blue-500 border-4 border-[#050816]"></div>
+
+            <h3 class="text-xl font-bold text-white">
+              Welcome Note
+            </h3>
+
+            <p class="mt-3 text-gray-300">
+              Opening remarks and introduction to the summit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+          <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+            <div class="inline-block px-5 py-2 rounded-full bg-green-600 text-white font-semibold">
+              10:05 AM – 10:20 AM
+            </div>
+          </div>
+
+          <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:ml-16 hover:border-green-500/50 transition duration-300">
+            <div class="absolute -left-[42px] md:-left-[74px] top-8 w-5 h-5 rounded-full bg-green-500 border-4 border-[#050816]"></div>
+
+            <h3 class="text-xl font-bold text-white">
+              Opening Keynote
+            </h3>
+
+            <p class="mt-3 text-gray-300">
+              Visionary insights into the future of AI and innovation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Main Highlight -->
+        <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+          <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+            <div class="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-green-600 to-[#2828284a] text-white font-semibold shadow-xl">
+              10:20 AM – 11:05 AM
+            </div>
+          </div>
+
+          <div class="relative bg-gradient-to-br from-green-600/20 to-[#2828284a]/20 backdrop-blur-xl border border-green-500/30 rounded-3xl p-7 md:ml-16 hover:scale-[1.02] transition duration-300">
+            <div class="absolute -left-[42px] md:-left-[74px] top-8 w-6 h-6 rounded-full bg-gradient-to-r from-green-500 to-blue-500 border-4 border-[#050816]"></div>
+
+            <span class="inline-block px-4 py-1 rounded-full bg-green-500/20 text-green-300 text-sm mb-4">
+              	Panel Discussion
+            </span>
+
+            <h3 class="text-xl font-black text-white leading-snug">
+              The Multi-Stack Advantage
+            </h3>
+
+            <p class="mt-4 text-gray-200 leading-relaxed">
+              Architecting Autonomy, Sovereignty, and Physical Intelligence in 2026.
+            </p>
+          </div>
+        </div>
+
+        <!-- Remaining Sessions -->
+        <div class="grid gap-8">
+
+          <!-- Session -->
+          <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+            <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+              <div class="inline-block px-5 py-2 rounded-full bg-[#2828284a] text-white font-semibold">
+                11:05 AM – 12:00 PM
+              </div>
+            </div>
+
+            <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:ml-16">
+              <div class="absolute -left-[42px] md:-left-[74px] top-8 w-5 h-5 rounded-full bg-blue-500 border-4 border-[#050816]"></div>
+
+              <h3 class="text-xl font-bold text-white">
+                A Deep Dive into Google's AI Stack
+              </h3>
+            </div>
+          </div>
+
+          <!-- Session -->
+          <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+            <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+              <div class="inline-block px-5 py-2 rounded-full bg-green-600 text-white font-semibold">
+                12:00 PM – 1:00 PM
+              </div>
+            </div>
+
+            <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:ml-16">
+              <div class="absolute -left-[42px] md:-left-[74px] top-8 w-5 h-5 rounded-full bg-green-500 border-4 border-[#050816]"></div>
+
+              <h3 class="text-xl font-bold text-white">
+                Lunch Break
+              </h3>
+            </div>
+          </div>
+
+          <!-- Session -->
+          <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+            <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+              <div class="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-green-600 to-[#2828284a] text-white font-semibold">
+                1:00 PM – 4:00 PM
+              </div>
+            </div>
+
+            <div class="relative bg-gradient-to-br from-[#2828284a]/20 to-green-600/20 backdrop-blur-xl border border-blue-500/30 rounded-3xl p-7 md:ml-16">
+              <div class="absolute -left-[42px] md:-left-[74px] top-8 w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-green-500 border-4 border-[#050816]"></div>
+
+              <span class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm mb-4">
+                Live Build Session
+              </span>
+
+              <h3 class="text-xl font-black text-white">
+                Build with Google AI Hackathon
+              </h3>
+
+              <p class="mt-4 text-gray-200">
+                Collaborate, build, and innovate using Google AI technologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Session -->
+          <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+            <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+              <div class="inline-block px-5 py-2 rounded-full bg-[#2828284a] text-white font-semibold">
+                4:00 PM – 4:15 PM
+              </div>
+            </div>
+
+            <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:ml-16">
+              <div class="absolute -left-[42px] md:-left-[74px] top-8 w-5 h-5 rounded-full bg-blue-500 border-4 border-[#050816]"></div>
+
+              <h3 class="text-xl font-bold text-white">
+                Closing Session
+              </h3>
+            </div>
+          </div>
+
+          <!-- Session -->
+          <div class="relative grid md:grid-cols-2 gap-6 items-center">
+
+            <div class="md:text-right md:pr-16 pl-16 md:pl-0">
+              <div class="inline-block px-5 py-2 rounded-full bg-green-600 text-white font-semibold">
+                4:15 PM – 5:00 PM
+              </div>
+            </div>
+
+            <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:ml-16">
+              <div class="absolute -left-[42px] md:-left-[74px] top-8 w-5 h-5 rounded-full bg-green-500 border-4 border-[#050816]"></div>
+
+              <h3 class="text-xl font-bold text-white">
+                High Tea & Networking
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--- Start Footer !-->
+    <footer class="footer style-1">
+        
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="te-footer-bottom-wrapper">
+                            <div class="te-copyright-text w-full text-center">
+                                <p>&copy; <a href="https://startupmission.kerala.gov.in/" target="_blank">Kerala Startup Mission: Home</a> 2026 | All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--- End Footer !-->
+    <!-- Scroll Up Section Start -->
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+    <!-- Scroll Up Section End -->
+</Layout>

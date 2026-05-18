@@ -1,0 +1,117 @@
+
+.accordion-wrapper {
+  position: relative;
+
+  .te-accordion-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .circle-drop-shadow {
+    bottom: -40%;
+    left: 0;
+  }
+  .te-accordion-list-item {
+    border-radius: 20px;
+    background-color: $gray-700;
+    overflow: hidden;
+
+    .te-accordion-head {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      padding: 18px 20px;
+      position: relative;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      // background-color: $primary-color;
+
+      &:before {
+        content: "\f103";
+        font-family: $font-awesome;
+        font-weight: 500;
+        background-color: $blue-color;
+        color: $blue-color;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        top: 0;
+        left: 0;
+        inset: 0;
+        padding: 2px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background: 
+          linear-gradient(to right, #121212, #121212), 
+          linear-gradient(to right, rgba(2, 193, 115, 0.40) , #121212); 
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+
+      //   background: linear-gradient(280.36deg, transparent 20.42%, rgba(2, 193, 115, 0.40) 84.24%),
+      // linear-gradient(0deg, transparent, transparent);
+      }
+      &.collapsed {
+        background-color: transparent;
+
+        &:before {
+          position: relative;
+          content: "\f101";
+          font-family: $font-awesome;
+          font-weight: 500;
+          background-color: transparent;
+          border-radius: 50px;
+          color: $blue-color;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 25px;
+          height: 25px;
+          flex-shrink: 0;
+          top: 0;
+          left: 0;
+          inset: 0;
+          padding: 2px;
+          border-radius: 5px;
+          border: 2px solid transparent;
+          background: 
+            linear-gradient(to right, #121212, #121212), 
+            linear-gradient(to right, rgba(2, 193, 115, 0.40) , #121212); 
+          background-clip: padding-box, border-box;
+          background-origin: padding-box, border-box;
+        }
+      }
+
+      .te-accordion-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        margin-bottom: 0;
+        letter-spacing: -0.51px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: $white;
+
+        span {
+          color: $primary-color;
+        }
+      }
+    }
+    .te-accordion-body {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      margin: 0 30px;
+      padding-bottom: 15px;
+      padding-top: 0;
+      padding-left: 30px;
+      @include transition;
+    }
+  }
+}

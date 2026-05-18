@@ -1,0 +1,111 @@
+.te-post-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+  
+
+    &:hover {
+      .image {
+        img {
+          transform: scale(1.05);
+          @include transition;
+        }
+      }
+    }
+    .image {
+      overflow: hidden;
+      border-radius: 20px 20px 0 0;
+      position: relative;
+  
+      img {
+        @include transition;
+        transform: scale(1);
+        width: 100%;
+      }
+  
+      .te-post-date {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-radius: 20px;
+        border: 1px solid $border-color;
+        background-image: linear-gradient(110deg, rgba(54, 54, 54, 0.29) -0.9%, rgba(161, 161, 161, 0.21) 101.13%);
+        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(6.5px);
+        padding: 13px 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+  
+        span {
+          color: $white;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 13.2px;
+          letter-spacing: -0.12px;
+        }
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      z-index: 3;
+  
+      .te-post-meta-info {
+        display: inline-flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 12px;
+  
+        .te-single-meta {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+  
+          span,
+          a {
+            color: $text-color;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            margin: 0;
+            text-transform: capitalize;
+          }
+          i {
+            color: $blue-color;
+          }
+        }
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 39.84px;
+        letter-spacing: 0.5px;
+        font-family: $heading-font;
+        margin-bottom: 7px;
+        color: $secondary-color;
+        @include transition;
+      }
+      a.read-btn {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 42px;
+        letter-spacing: 0.6px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $primary-color;
+  
+        &:hover {
+          color: $blue-color;
+        }
+      }
+    }
+  }
+  
